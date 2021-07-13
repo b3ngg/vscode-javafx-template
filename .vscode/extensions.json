@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "vscjava.vscode-java-debug",
+    "shrey150.javafx-support",
+    "redhat.java",
+    "redhat.vscode-commons",
+    "vscjava.vscode-java-dependency",
+    "redhat.fabric8-analytics"
+  ]
+}
