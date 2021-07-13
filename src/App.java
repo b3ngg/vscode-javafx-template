@@ -1,17 +1,20 @@
 
-import com.apple.eawt.Application;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-import org.graalvm.compiler.phases.common.NodeCounterPhase.Stage;
-
+import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.stage.Stage;
 
-public class App extends Application {
+public class App extends Application implements Initializable {
 
     @FXML
-    private Label title;
+    private Label label;
 
     @Override
     public void start(Stage stage) throws Exception {
@@ -21,8 +24,13 @@ public class App extends Application {
         stage.show();
     }
 
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        label.setText("All set up!");
+    }
+
     public static void main(String[] args) {
         launch(args);
-        title.setText("JavaFx works!")
     }
+
 }
