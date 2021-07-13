@@ -31,16 +31,24 @@ People who seriously want to write whole programs in Java and export them as wel
    export PATH_TO_FX=path/to/javafx-sdk-15.0.1/lib
    ```
 
-4. ```bash
+4. Clone the template (in your projects folder)
+   ```bash
    git clone https://github.com/b3ngg/vscode-javafx-template.git my_app
    ```
-5. ```bash
+5. Navigate into your new app
+   ```bash
    cd my_app
    ```
-6. ```bash
+6. Run the setup script to automatically link the SDKs
+   ```bash
    fx_path=$PATH_TO_FX node setup
    ```
-7. (Optional) Install recommended extensions
-8. Press `F5` to launch your application
+7. Open the project in VSCode
+   ```bash
+   code .
+   ```
+8. (Optional) Install recommended extensions
+9. Possibly wait a few seconds for the extensions to settle down to life. You may have to reload the window the first time.
+10. Press `F5` to launch your application
 
-You can now write your application inside the `src` directory and edit the `scene.fxml` with the [SceneBuilder](https://gluonhq.com/products/scene-builder/).
+**You can now write your application inside the `src` directory and edit the `scene.fxml` with the [SceneBuilder](https://gluonhq.com/products/scene-builder/).**
